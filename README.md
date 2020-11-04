@@ -1,2 +1,1 @@
 # Rubric.
-Created with CodeSandbox
