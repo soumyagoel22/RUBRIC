@@ -34,7 +34,9 @@ const Modal = ({ state, setShow }) => {
     <>
       <div className="modal">
         <h6>Get Started With SquadVoice</h6>
+        {(state===20 ||state===40 ||state===60 ||state===80) ?
         <div>Plan Selected: Qualified {state}</div>
+        :""}
         <form className="showForm" onSubmit={(e) => onHandle(e)}>
           <ShowInput
             name="Name:"
