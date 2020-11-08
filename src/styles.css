@@ -19,7 +19,7 @@ body {
   left: 0px;
   right: 0px;
   margin: 0 auto;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .header {
@@ -35,7 +35,9 @@ body {
   border-radius: 8px;
   outline: none;
   cursor: pointer;
-  background-color: rgb(243, 236, 236);
+  color:#1d2737;
+  /* border:none; */
+  background-color:#f7f9fa;
 }
 
 .btnChange {
@@ -44,7 +46,8 @@ body {
   border-radius: 8px;
   outline: none;
   cursor: pointer;
-  background-color: rgb(128, 159, 189);
+  color:#ffffff;
+  background-color: #5a6f90;
 }
 
 .card {
@@ -52,33 +55,38 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 30px;
+  margin: 50px;
 }
 
 .inCard {
   width: 250px;
   height: 350px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 20px;
   padding: 8px;
+  text-align: center;
 }
 
 button {
   padding: 3px;
   border-radius: 8px;
+  border:none;
   outline: none;
   cursor: pointer;
-  background-color: rgb(243, 236, 236);
+  color:#ee5a36;
+  /* border-color:#ee5a36; */
+  font-weight:bold;
+  background-color: #ffffff;
 }
 
 .modal {
-  width: 90%;
+  width: 60%;
   height: 80%;
   top: 50%;
   left: 50%;
   padding: 30px;
   border: 1px solid black;
-  text-align: center;
+  /* text-align: center; */
   display: block;
   position: fixed;
   right: 0px;
@@ -97,17 +105,27 @@ button {
 .showInput {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  width:100%;
+  /* justify-content: center; */
+  /* align-items: center; */
   gap: 10px;
 }
 
 .showLabel {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   gap: 10px;
+}
+
+.btnChangebtm{
+  background-color: #ee5a36;
+  color: #ffffff;
+}
+
+.btnbtm{
+  border-color:#ee5a36;
 }
 
 .display-block {
