@@ -18,9 +18,11 @@ const Details = () => {
   let fp = 1679;
   // id
   let id = 1;
+  let id1 = 0;
 
   for (i = 1; i <= 5; i++) {
     let a = {};
+    id1 = 0;
     a.id = id;
     if (i === 5) {
       a.av = `$${av}K+`;
@@ -34,11 +36,13 @@ const Details = () => {
       obj.pt = `$${pt}`;
       obj.tp = `$${tp}`;
       obj.fp = `$${fp}/mo`;
+      obj.id1 = id1;
       value.push(obj);
       ql = ql + 20;
       pt = pt - 2;
       tp = tp + 200;
       fp = fp + 1000;
+      id1++;
     }
     a.value = value;
     // console.log(a);
@@ -50,6 +54,7 @@ const Details = () => {
     pt += 15;
     tp = 299;
     fp -= 2500;
+    // console.log(id1);
   }
 
   const showCard = (id) => {
@@ -57,7 +62,7 @@ const Details = () => {
   };
   let dataa = data.filter((ele) => ele.id === btnSelected)[0];
   let { value, id: dataId } = dataa;
-
+  // console.log(value);
   return (
     <>
       <div className="header">
